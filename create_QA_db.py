@@ -31,7 +31,7 @@ q_embs = llm_emb.get_embs(questions)
 COLLECTION_NAME = "TEST_LLM_DB"
 
 print("Connect to db")
-connections.connect("default", host="localhost", prot="19530")
+connections.connect("default", host="localhost", port="19530")
 if utility.has_collection(COLLECTION_NAME):
     utility.drop_collection(COLLECTION_NAME)
 

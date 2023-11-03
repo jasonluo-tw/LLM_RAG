@@ -14,7 +14,7 @@ query = input("問題?")
 llm_emb = LM()
 query_embs = llm_emb.get_embs([query])
 
-connections.connect("default", host="localhost", prot="19530")
+connections.connect("default", host="localhost", port="19530")
 
 if not utility.has_collection(COLLECTION_NAME):
     print(f"no {COLLECTION_NAME} collection. EXIT")

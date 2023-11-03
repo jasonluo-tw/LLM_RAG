@@ -20,6 +20,8 @@ from pymilvus import (
 img_path = 'data/weather_dataset/snow/1440.jpg'
 imgs = [read_image(img_path)]
 
+print(imgs[0].shape)
+
 kind = 'efficientnet_b7'
 img_extractor = ImageExtractor(kind=kind)
 query_img_emb = img_extractor.get_emb(imgs)
@@ -27,7 +29,7 @@ query_img_emb = img_extractor.get_emb(imgs)
 ## vector db
 COLLECTION_NAME = "TEST_IMG_DB_EFF_B7"
 
-connections.connect("default", host="localhost", prot="19530")
+connections.connect("default", host="localhost", port="19530")
 
 if not utility.has_collection(COLLECTION_NAME):
     print(f"no {COLLECTION_NAME} collection. EXIT")

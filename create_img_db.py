@@ -33,7 +33,7 @@ emb_dim = img_embs.shape[1]
 COLLECTION_NAME = f"TEST_IMG_DB-{kind}"
 
 print("Connect to db")
-connections.connect("default", host="localhost", prot="19530")
+connections.connect("default", host="localhost", port="19530")
 if utility.has_collection(COLLECTION_NAME):
     utility.drop_collection(COLLECTION_NAME)
 
