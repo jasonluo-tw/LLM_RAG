@@ -43,7 +43,7 @@
 Ref.
 - [Milvus](https://milvus.io/docs/overview.md)
 - [faq jsonl data](https://github.com/A-baoYang/finetune-with-openai)
-- [Bert-based model from ckiplab](source: https://huggingface.co/ckiplab/bert-base-chinese)
+- [Bert-based model from ckiplab](https://huggingface.co/ckiplab/bert-base-chinese)
 - [weather image recognition](https://www.kaggle.com/datasets/jehanbhathena/weather-dataset/)
 - [Towhee - reverse image search](https://github.com/towhee-io/examples/blob/main/image/reverse_image_search/1_build_image_search_engine.ipynb?fbclid=IwAR3lM0DBT8fD0IPWj3Gpz1TP1L9YyYPLkZ0GR0qJT5aniWHh10AHPv5Iwz0)
 
